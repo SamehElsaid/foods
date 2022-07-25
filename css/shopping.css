@@ -1,0 +1,48 @@
+:root {
+    --yellow: #fed330;
+    --red: #e74c3c;
+    --white: #fff;
+    --black: #222;
+    --light-color: #777;
+    --border: .2rem solid var(--black);
+}
+
+.total {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    border: var(--border);
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.total p {
+    color: var(--light-color);
+    font-size: 18px;
+}
+
+.total p span {
+    color: var(--black);
+}
+
+.total button {
+    display: inline-block;
+    padding: 10px 15px;
+    cursor: pointer;
+    font-size: 20px;
+    text-transform: capitalize;
+    background-color: var(--yellow);
+    color: var(--black);
+}
+.i2{
+    font-size: 20px;
+    cursor: pointer;
+    background: var(--red);
+}
+.btns button{
+    background-color: var(--red);
+    color: white;
+}
+button:hover {
+    transform: scaleX(1.1);
+}

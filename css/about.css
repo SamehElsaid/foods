@@ -1,0 +1,191 @@
+:root {
+    --yellow: #fed330;
+    --red: #e74c3c;
+    --white: #fff;
+    --black: #222;
+    --light-color: #777;
+    --border: .2rem solid var(--black);
+}
+.about{
+    overflow: hidden;
+    padding: 40px 0;
+    text-align: center;
+    background: var(--black)
+}
+.about h3{
+    color: var(--white);
+    text-transform: capitalize;
+    font-size: 40px;
+}
+.about p{
+    margin-top: 20px;
+    color: var(--light-color);
+    font-size: 20px;
+}
+.about p a{
+    color: var(--yellow);
+}
+/*  */
+/*  */
+.Choose .container {
+    
+}
+.Choose .container .mainChoose{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    align-items: center;
+    text-align: center;
+}
+.Choose .container .mainChoose h3{
+    text-transform: capitalize;
+    color: var(--black);
+    font-size: 30px;
+}
+.Choose .container .mainChoose p{
+    padding: 1rem 0;
+    line-height: 2;
+    font-size: 17px;
+    color: var(--light-color)
+}
+.Choose .container .mainChoose button{
+    margin: 0 0;
+    padding: 10px 15px;
+    cursor: pointer;
+    font-size: 20px;
+    text-transform: capitalize;
+    background-color: var(--yellow);
+    color: var(--black);
+}
+.Choose .container .mainChoose button:hover{
+    transform: scaleX(1.4);
+}
+.textSimple{
+    text-align: center;
+    margin-bottom: 30px;
+}
+h2 {
+    display: inline-block;
+    font-size: 40px;
+    border-bottom: 5px solid var(--black);
+    text-align: center;
+
+}
+.boxSimple{
+    cursor: pointer;
+}
+.boxSimple:hover .img{
+    filter: invert();
+}
+.boxSimple:hover{
+    background-color: var(--black);
+    
+}
+.boxSimple:hover h3{
+    color: white;
+    
+}
+.boxesSimple {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+    text-align: center;
+    
+}
+.boxSimple{
+    padding: 20px;
+    border: var(--border);
+}
+.boxesSimple .img img{
+    width: 40%;
+}
+.boxesSimple h3{
+    font-size: 20px;
+    color: var(--black);
+    margin: 10px 0;
+    text-transform: capitalize;
+}
+.boxesSimple p{
+    font-size: 17px;
+    color: var(--light-color);
+    line-height: 2;
+}
+.auto{
+    text-align: center;
+
+
+}
+.auto h2{
+    margin: 30px 0;
+}
+.allCus {
+    margin-bottom: 30px;
+}
+
+.cus .img{
+    text-align: center;
+
+}
+.cus img{
+    width: 30%;
+    border-radius: 50%;
+}
+.cus .textcus{
+    text-align: center;
+}
+.cus .textcus p{
+    padding: 10px 0;
+    line-height: 2;
+    font-size: 16px;
+    color: var(--light-color);
+}
+.cus .textcus h3 {
+    font-size: 18px;
+    color: var(--black);
+    margin-top: 15px;
+}
+.cus {
+    padding: 20px;
+    border: var(--border);
+    margin: 20px 0;
+}
+.customer{
+    margin-bottom: 30px;
+}
+@media (max-width:991px){
+    h2{
+        font-size: 20px !important;
+    }
+    h3{
+        font-size: 20px !important;
+    }
+    p{
+        font-size: 15px !important;
+    }
+    .Choose .container .mainChoose{
+        grid-template-columns: 1fr;
+
+
+    }
+    .boxesSimple{
+        grid-template-columns: 1fr 1fr;
+
+    }
+}
+@media (max-width:500px){
+
+
+    .boxesSimple{
+        grid-template-columns: 1fr ;
+
+    }
+    h2{
+
+    }
+    h3{
+        font-size: 20px !important;
+    }
+    p{
+        font-size: 15px !important;
+    }
+}

@@ -1,0 +1,87 @@
+:root {
+    --yellow: #fed330;
+    --red: #e74c3c;
+    --white: #fff;
+    --black: #222;
+    --light-color: #777;
+    --border: .2rem solid var(--black);
+}
+.allForm{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    margin: 40px 0;
+}
+.formInput{
+    display: grid;
+    gap: 20px;
+    padding: 20px;
+    border: var(--border);
+    text-align: center;
+}
+.formInput input,.formInput textarea{
+    width: 100%;
+    padding: 15px 20px;
+    border: var(--border);
+    
+}
+textarea{
+
+    resize: none;
+
+}
+form button{
+    margin: 0 0;
+    padding: 10px 15px;
+    cursor: pointer;
+    font-size: 20px;
+    text-transform: capitalize;
+    background-color: var(--yellow);
+    color: var(--black);
+}
+form button:hover {
+    transform: scaleX(1.4);
+}
+.searchSec .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 30px;
+    gap: 10px;
+}
+.search {
+    width: 100%;
+}
+.search input{
+    width: 100%;
+    display: flex;
+    border: var(--border);
+    height: 40px;
+    align-items: center;
+    padding-left: 20px;
+
+}
+button{
+    background-color: var(--black);
+    height: 100%;
+    height: 40px;
+    padding: 0 20px 0;
+    cursor: pointer;
+    
+}
+button i{
+    transition: .5s ease-in-out;
+    color: var(--white);
+    font-size: 20px;
+}
+button:hover i{
+    color: var(--yellow);
+}
+@media (max-width:991px) {
+    .allForm{
+        grid-template-columns: 1fr;
+    }
+    form button{
+        font-size: 14px;
+    }
+}
